@@ -1,0 +1,211 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: start;
+}
+
+#main-nav-bar {
+    background-color: rgb(27, 0, 145);
+    padding: 1.025rem;
+    transition: all 0.02s ease 0s;
+    position: fixed;
+    right: 0px;
+    z-index: 2;
+    left: 0px;
+    height:50px;
+}
+
+#logo {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.option-element {
+    font-size: x-large;
+    margin: 1.2rem;
+    color: white;
+
+}
+
+.options {
+    margin-left: 15vh;
+    display: flex;
+    justify-content: row;
+    align-content: center;
+    gap: 50px;
+}
+
+.icons {
+    transform: scale(2);
+    margin-right: 15px;
+}
+
+.option-element {
+    transition: all 0.7s ease 0s;
+    font-size: 3vh;
+}
+
+.option-element:hover {
+    transform: scale(0.89);
+    color: rgb(240, 113, 68);
+    border-radius:10%;
+}
+
+.navigation-bar .option-element {
+    left: auto;
+}
+
+#quit-div {
+    display: flex;
+    margin-left: auto;
+    transition: all 0.3F2s ease;
+    border-radius: 10%;
+    width: 9vh;
+    height: 9vh;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+#quit-div:hover {
+    background-color: rgb(173, 13, 13);
+}
+
+#quit-icon {
+    transform: scale(3);
+    padding: 0px;
+}
+
+/* Game container CSS styles */
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    height: 600px;
+    padding:100px;
+    padding-left:20px;
+    
+}
+
+.game-table {
+    border-collapse: collapse;
+    margin: 25px;
+    border-radius: 5%;
+    font-size: 2rem;
+    overflow: hidden;
+    box-shadow:0 0 50px black;
+    transform:scale(1.1);
+    z-index: 1;
+    min-width:80px;
+    font-size:20px;
+    min-width:500px;
+    padding:500px;
+}
+
+.game-table tr:nth-child(even) {
+    background-color:rgb(228, 226, 226);
+}
+
+.game-table thead {
+    background-color: rgba(2, 69, 255, 0.89);
+    text-align: left;
+    color:white;
+}
+
+.game-table th,
+td {
+    padding: 5px 5px;
+    text-align:center;  
+    border-bottom:2px solid rgb(66, 65, 65);
+    
+}
+.game-table tbody tr:last-of-type(n) {
+    border-bottom:2px solid rgb(1, 61, 172);
+}
+
+.gameImage1, .gameImage2 {
+    width:60px;
+    height:60px;
+    cursor:pointer;
+    pointer-events: auto;
+    animation-duration:1s;
+    animation-iteration-count:1;
+}
+.gameImage2 {
+    transform:rotateY(180deg)
+}
+.footer {
+    position:fixed;
+    bottom:0;
+    background-color:rgb(27, 0, 145);
+}
+.scoreboard {
+    min-width:300px;
+    overflow:hidden;
+    box-shadow:0 0 10px blue;
+    font-size:20px;
+}
+.scoreboard th {
+    background-color : rgb(27, 0, 145);
+    color:white;
+}
+.scoreboard-caption {
+    font-size:30px;
+    background-color:rgb(27, 0, 145);
+    color:white;
+    overflow:hidden;
+    padding:5px;
+}
+.si-element {
+    border-right:2px solid black;
+    width:20px;
+}
+.present-sit {
+    width:500px;
+    height:350px;
+    border:2px solid black;
+    box-shadow:0 0 10px red;
+}
+.score-p {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+#si-header {
+    background-color:rgba(2, 2, 105, 0.781)
+}
+
+.gameImageContainer1 , .gameImageContainer2{
+    cursor:pointer;
+    position:relative;
+    pointer-events:auto;
+    z-index:0;
+}
+
+.gameImageContainer1 {
+    background-color:rgba(6, 6, 185, 0.719);
+}
+.gameImageContainer2 {
+    background-color:rgba(160, 3, 3, 0.699)
+}
+.present-sit {
+    align-items:center;
+    text-align:center;
+    font-size:50px;
+}
+
