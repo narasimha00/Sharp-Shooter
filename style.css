@@ -17,7 +17,7 @@
 }
 label.logo {
     color:white;
-    font-size:35px;
+    font-size:5vh;
     line-height:70px;
     padding:0 100px;
     font-weight:bolder;
@@ -102,7 +102,7 @@ label.logo {
     align-items: center;
     gap:5px;
     height: 50vh;
-    padding: 100px 20vw;
+    padding: 100px 50vw;
 }
 
 .game-table {
@@ -117,7 +117,6 @@ label.logo {
     transform:scale(2vh);
     font-size:5vh;
     min-width:1vw;
-    padding:500px;
 }
 
 .game-table tr:nth-child(even) {
