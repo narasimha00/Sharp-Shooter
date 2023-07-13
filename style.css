@@ -1,93 +1,96 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu-boxed.css');
+
 * {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.navigation-bar {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: start;
-}
-
+/* Game navigation Bar Styles */
 #main-nav-bar {
-    background-color: rgb(27, 0, 145);
-    padding: 1.025rem;
-    transition: all 0.02s ease 0s;
-    position: fixed;
-    right: 0px;
-    z-index: 2;
-    left: 0px;
-    height:50px;
+    background-color:darkblue;
+    height:80px;
+    width:100%;
+    z-index:2;
+    position:fixed;
+}
+label.logo {
+    color:white;
+    font-size:35px;
+    line-height:70px;
+    padding:0 100px;
+    font-weight:bolder;
+}
+#main-nav-bar ul {
+    float:right;
+    margin-right:20px;
+}
+#main-nav-bar ul li {
+    display:inline-block;
+    line-height:70px;
+    margin:0 5px;
+}
+#main-nav-bar ul li a {
+    color:white;
+    font-size:17px; 
+}
+#main-nav-bar ul li a:hover{
+       color:orangered;
 }
 
-#logo {
-    font-family: sans-serif;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.checkbtn {
+    color:white;
+    font-size:30px;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    visibility:hidden;
 }
-
-
-.option-element {
-    font-size: x-large;
-    margin: 1.2rem;
-    color: white;
-
+#check {
+    display:none;
 }
-
-.options {
-    margin-left: 15vh;
-    display: flex;
-    justify-content: row;
-    align-content: center;
-    gap: 50px;
+@media (max-width: 952px) {
+    label.logo {
+        font-size:30px;
+        padding-left:50px;
+    }
+    #main-nav-bar ul li a {
+        font-size:16px;
+    }
 }
-
-.icons {
-    transform: scale(2);
-    margin-right: 15px;
+@media (max-width: 858px) {
+    .checkbtn {
+        visibility:visible;
+        display:block;
+    }
+    #main-nav-bar ul {
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        z-index: 2;
+        top:80px;
+        left:-100%;;
+        text-align:center;   
+        transition:all .5s;
+    }
+    #main-nav-bar ul li {
+        display:block;
+        margin:50px 0;
+        line-height:30px;
+    }
+    #main-nav-bar ul li a {
+        font-size:25px;
+    }
+    #main-nav-bar ul li a:hover {
+       color:orangered;
+    }
+    #check:checked ~ ul {
+        left:0;
+    }  
 }
-
-.option-element {
-    transition: all 0.7s ease 0s;
-    font-size: 3vh;
-}
-
-.option-element:hover {
-    transform: scale(0.89);
-    color: rgb(240, 113, 68);
-    border-radius:10%;
-}
-
-.navigation-bar .option-element {
-    left: auto;
-}
-
-#quit-div {
-    display: flex;
-    margin-left: auto;
-    transition: all 0.3F2s ease;
-    border-radius: 10%;
-    width: 9vh;
-    height: 9vh;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-}
-
-#quit-div:hover {
-    background-color: rgb(173, 13, 13);
-}
-
-#quit-icon {
-    transform: scale(3);
-    padding: 0px;
-}
-
 /* Game container CSS styles */
 
 .game-container {
@@ -99,8 +102,6 @@
     gap:100px;
     height: 600px;
     padding:100px;
-    padding-left:20px;
-    
 }
 
 .game-table {
@@ -209,4 +210,3 @@ td {
     text-align:center;
     font-size:50px;
 }
-

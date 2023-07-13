@@ -4,24 +4,24 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d7206ddc34.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <nav id="main-nav-bar" class="navigation-bar">
-        <h1 id="logo">SHARP<br>SHOOTER</h1>
-        <div class="options">
-            <a href="#" id="about" class="option-element"><img src="Icons/about.svg" id="about-icon"
-                    class="icons"> About</a>
-            <a href="#" id="help" class="option-element"><img src="Icons/help.svg" id="help-icon"
-                    class="icons"> Help</a>
-            <a href="#" id="settings" class="option-element"><img src="Icons/settings.svg" id="settings-icon"
-                    class="icons"> Settings</a>
-        </div>
-        <div id="quit-div">
-            <a href="#" id="quit" class="option-element-quit"><img src="Icons/quit.svg" id="quit-icon"
-                    class="icons"> </a>
-        </div>
+        <input type="checkbox" id="check">
+        <label class="logo">
+           Sharp Shooter 
+        </label>
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#" id="about" class="option-element">About</a></li>
+            <li><a href="#" id="help" class="option-element">Help</a></li>
+            <li><a href="#" id="settings" class="option-element">Setup</a></li>
+        </ul>
     </nav>
 
     <!-- Game Content -->
@@ -30,7 +30,7 @@
             <thead>
                 <tr class="header-row">
                     <th class="header-element" id="si-header">
-                        DICE
+                        DICE<br>
                         NUMBER
                     </th>
                     <th class="header-element" id="p1-header">
