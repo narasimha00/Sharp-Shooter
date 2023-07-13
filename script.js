@@ -1,3 +1,5 @@
+alert("Styles applied successfully !! , click 'OK' to continue(1)")
+
 const gameP1 = document.querySelectorAll(".gameImageContainer1")
 const gameP2 = document.querySelectorAll(".gameImageContainer2")
 const shootSound = new Audio("Sounds/shoot.mp3")

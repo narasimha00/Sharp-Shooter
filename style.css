@@ -113,13 +113,14 @@ label.logo {
     border-collapse: collapse;
     margin: 25px;
     border-radius: 5%;
-    font-size: 2rem;
+    font-size: 2vh;
     overflow: hidden;
     box-shadow:0 0 50px black;
     z-index: 1;
     transform:scale(2vh);
     font-size:3vw;;
-    min-width:80vh;
+    min-width:70vw;
+    min-height:20vw;
 }
 
 .game-table tr:nth-child(even) {
