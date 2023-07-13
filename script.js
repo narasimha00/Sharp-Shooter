@@ -1,4 +1,4 @@
-alert(`Styles applied successfully !! , click 'OK' to continue(1)`)
+alert("Styles applied successfully !! , click 'OK' to continue (2)")
 
 const gameP1 = document.querySelectorAll(".gameImageContainer1")
 const gameP2 = document.querySelectorAll(".gameImageContainer2")

@@ -105,8 +105,7 @@ label.logo {
     height: fit-content;
     padding-top:17%;
     padding-left:10%;
-    padding-right:50%;
-    padding-left:50%;
+    padding-right:10%;
 }
 
 .game-table {
@@ -119,8 +118,8 @@ label.logo {
     z-index: 1;
     transform:scale(2vh);
     font-size:3vw;;
-    min-width:70vw;
-    min-height:20vw;
+    min-width:80vw;
+    min-height:10vw;
 }
 
 .game-table tr:nth-child(even) {
