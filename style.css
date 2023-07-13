@@ -92,7 +92,8 @@ label.logo {
         bottom:0;
     }  
     .game-table {
-        padding:2vh 5vh;
+        margin-left:10rem;
+        margin-right:10rem;
     }
 }
 /* Game container CSS styles */
@@ -116,10 +117,9 @@ label.logo {
     overflow: hidden;
     box-shadow:0 0 50px black;
     z-index: 1;
-    min-width:80px;
     transform:scale(2vw);
     font-size:3vh;
-    min-width:50vh;
+    min-width:80vh;
 }
 
 .game-table tr:nth-child(even) {
