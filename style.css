@@ -44,7 +44,7 @@ label.logo {
     font-size:30px;
     float:right;
     line-height:80px;
-    margin-right:50px;
+    margin-right:40px;
     cursor:pointer;
     visibility:hidden;
 }
@@ -103,22 +103,22 @@ label.logo {
     align-items: center;
     gap:5px;
     height: fit-content;
-    padding-top:05%;
+    padding-top:17%;
     padding-left:10%;
     padding-right:10%;
-    padding-bottom:2%;
 }
 
 .game-table {
     border-collapse: collapse;
     margin: 25px;
     border-radius: 5%;
+    font-size: 2vh;
     overflow: hidden;
     box-shadow:0 0 50px black;
     z-index: 1;
-    transform:scale(0.5vh);
-    font-size:1.5vw;
-    min-width:60vw;
+    transform:scale(2vh);
+    font-size:3vw;;
+    min-width:80vw;
     min-height:10vw;
 }
 
@@ -212,9 +212,4 @@ td {
     align-items:center;
     text-align:center;
     font-size:50px;
-}
-@media (max-width: 858px) {
-    .game-container {
-        padding-top:10%;
-    }
 }
