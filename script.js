@@ -1,17 +1,19 @@
-alert("Styles applied successfully !! , click 'OK' to continue [ update - 3 ]")
-
+// alert("Styles applied successfully !! , click 'OK' to continue [ update 4 ]")
 const gameP1 = document.querySelectorAll(".gameImageContainer1")
 const gameP2 = document.querySelectorAll(".gameImageContainer2")
 const shootSound = new Audio("Sounds/shoot.mp3")
 const aboutButton = document.getElementById("about")
 const helpButton = document.getElementById("help")
 const settingsButton = document.getElementById("settings")
+const greetingsDone = document.querySelector("#popup-confirmation")
 
+// Current development status update !! 
+alert("UPDATE 4 applied successfully !! ")
 
 // Navbar programming 
 Array.from(document.getElementsByClassName("option-element")).forEach((e)=> {
     e.addEventListener('click',()=> {
-        alert(`"${e.textContent}" section is to be updated shortly !!`)
+        alert(`FEATURE COMING SOON :  "${e.textContent}" section is to be updated shortly !!`)
     })
 })
 
@@ -44,3 +46,8 @@ Array.from(gameP2).forEach(element=> {
 // Current state
 let current_state = document.querySelector(".present-sit")
 current_state.innerHTML = `<div> HELLO <br> <span style="color:red;font-size:3vw"> This game is still under development !!  </span><span style="font-size:2vw;color:green"><br>But feel free to play around with the characters ... </span></div>`
+
+
+greetingsDone.addEventListener('click',()=> {
+    document.body.querySelector("#welcome-popup").classList.add("active")
+})

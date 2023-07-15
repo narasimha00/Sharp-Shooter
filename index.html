@@ -11,171 +11,164 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav id="main-nav-bar" class="navigation-bar">
-        <input type="checkbox" id="check">
-        <label class="logo">
-           Sharp Shooter 
-        </label>
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <ul>
-            <li><a href="#" id="about" class="option-element">About</a></li>
-            <li><a href="#" id="help" class="option-element">Help</a></li>
-            <li><a href="#" id="settings" class="option-element">Setup</a></li>
-        </ul>
-    </nav>
 
-    <!-- Game Content -->
-    <div class="game-container" id="mainGameContainer">
-        <table class="game-table">
-            <thead>
-                <tr class="header-row">
-                    <th class="header-element" id="si-header">
-                        DICE<br>
-                        NUMBER
-                    </th>
-                    <th class="header-element" id="p1-header">
-                        PLAYER 1
-                    </th>
-                    <th class="header-element" id="p2-header">
-                        PLAYER 2
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="row1">
-                    <td class="si-element" id="id-1">
-                        1
-                    </td>
-                    <td class="table-element" id="p1r1">
-                        <div id="p1pic1" class="gameImageContainer1">
-                            <img loop="1" src="Images/char_img_stable.png" alt="" class="gameImage1" id="p1-r1-img">
-                        </div>
-                    </td>
-                    <td class="table-element" id="p2r1">
-                        <div id="p2pic1" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
-                                id="p2-r1-img">
-                        </div>
-                    </td>
-                </tr>
-                <tr class="row2">
-                    <td class="si-element" id="id-2">
-                        2
-                    </td>
-                    <td class="table-element" id="p1r2">
-                        <div id="p1pic2" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
-                                id="p1-r2-img">
-                        </div>
-                    </td>
-                    <td class="table-element" id="p2r2">
-                        <div id="p2pic2" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
-                                id="p2-r2-img">
-                        </div>
-                    </td>
-                </tr>
-                <tr class="row3">
-                    <td class="si-element" id="id-3">
-                        3
-                    </td>
-                    <td class="table-element" id="p1r3">
-                        <div id="p1pic3" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
-                                id="p1-r3-img">
-                        </div>
-                    </td>
-                    <td class="table-element" id="p2r3">
-                        <div id="p2pic3" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
-                                id="p2-r3-img">
-                        </div>
-                    </td>
-                </tr>
-                <tr class="row3">
-                    <td class="si-element" id="id-3">
-                        4
-                    </td>
-                    <td class="table-element" id="p1r3">
-                        <div id="p1pic4" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
-                                id="p1-r4-img">
-                        </div>
-                    </td>
-                    <td class="table-element" id="p2r3">
-                        <div id="p2pic4" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
-                                id="p2-r4-img">
-                        </div>
-                    </td>
-                </tr>
-                <tr class="row5">
-                    <td class="si-element" id="id-5">
-                        5
-                    </td>
-                    <td class="table-element" id="p1r5">
-                        <div id="p1pic5" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
-                                id="p1-r5-img">
-                        </div>
-                    </td>
-                    <td class="table-element" id="p2r5">
-                        <div id="p2pic5" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
-                                id="p2-r5-img">
-                        </div>
-                    </td>
-                </tr>
-                <tr class="row6">
-                    <td class="si-element" id="id-6">
-                        6
-                    </td>
-                    <td class="table-element" id="p1r6">
-                        <div id="p1pic6" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
-                                id="p1-r5-img">
-                        </div>
-                    </td>
-                    <td class="table-element" id="p2r6">
-                        <div id="p2pic6" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
-                                id="p2-r5-img">
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="score-p">
-            <table class="scoreboard">
-                <caption class="scoreboard-caption">
-                    SCOREBOARD
-                </caption>
+    <!-- POP-UP windows -->
+
+    <!-- Welcome and confirmation pop up -->
+    <div id="welcome-popup" class="popup">
+         <h1 id="popup-header">GREETINGS</h1>
+         <div id="popup-content">
+            <h3>WELCOME TO THIS GAME, <br>Please do let me know your feedback on this game !! </h3>
+         </div>
+         <button class="popup-button" id="popup-confirmation">
+             DONE 
+         </button>
+    </div>
+
+    <div class="overall-container">
+        
+    <!-- Navigation Bar -->
+        <nav id="main-nav-bar" class="navigation-bar">
+            <input type="checkbox" id="check">
+            <label class="logo">
+               Sharp Shooter 
+            </label>
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#" id="about" class="option-element">About</a></li>
+                <li><a href="#" id="help" class="option-element">Help</a></li>
+                <li><a href="#" id="settings" class="option-element">Setup</a></li>
+                <li><a href="#" id="score" class="option-element">Scores</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Game Content -->
+        <div class="game-container" id="mainGameContainer">
+            <table class="game-table">
                 <thead>
-                    <tr class="score-table-header">
-                        <th>
+                    <tr class="header-row">
+                        <th class="header-element" id="si-header">
+                            DICE<br>
+                            NUMBER
+                        </th>
+                        <th class="header-element" id="p1-header">
                             PLAYER 1
                         </th>
-                        <th>
+                        <th class="header-element" id="p2-header">
                             PLAYER 2
                         </th>
                     </tr>
-                    <tr>
-                        <td class="player-1-score">
-                            10
+                </thead>
+                <tbody>
+                    <tr class="row1">
+                        <td class="si-element" id="id-1">
+                            1
                         </td>
-                        <td class="player-2-score">
-                            20
+                        <td class="table-element" id="p1r1">
+                            <div id="p1pic1" class="gameImageContainer1">
+                                <img loop="1" src="Images/char_img_stable.png" alt="" class="gameImage1" id="p1-r1-img">
+                            </div>
+                        </td>
+                        <td class="table-element" id="p2r1">
+                            <div id="p2pic1" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
+                                    id="p2-r1-img">
+                            </div>
                         </td>
                     </tr>
-                </thead>
+                    <tr class="row2">
+                        <td class="si-element" id="id-2">
+                            2
+                        </td>
+                        <td class="table-element" id="p1r2">
+                            <div id="p1pic2" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
+                                    id="p1-r2-img">
+                            </div>
+                        </td>
+                        <td class="table-element" id="p2r2">
+                            <div id="p2pic2" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
+                                    id="p2-r2-img">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="row3">
+                        <td class="si-element" id="id-3">
+                            3
+                        </td>
+                        <td class="table-element" id="p1r3">
+                            <div id="p1pic3" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
+                                    id="p1-r3-img">
+                            </div>
+                        </td>
+                        <td class="table-element" id="p2r3">
+                            <div id="p2pic3" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
+                                    id="p2-r3-img">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="row3">
+                        <td class="si-element" id="id-3">
+                            4
+                        </td>
+                        <td class="table-element" id="p1r3">
+                            <div id="p1pic4" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
+                                    id="p1-r4-img">
+                            </div>
+                        </td>
+                        <td class="table-element" id="p2r3">
+                            <div id="p2pic4" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
+                                    id="p2-r4-img">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="row5">
+                        <td class="si-element" id="id-5">
+                            5
+                        </td>
+                        <td class="table-element" id="p1r5">
+                            <div id="p1pic5" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
+                                    id="p1-r5-img">
+                            </div>
+                        </td>
+                        <td class="table-element" id="p2r5">
+                            <div id="p2pic5" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
+                                    id="p2-r5-img">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="row6">
+                        <td class="si-element" id="id-6">
+                            6
+                        </td>
+                        <td class="table-element" id="p1r6">
+                            <div id="p1pic6" class="gameImageContainer1"> <img src="Images/char_img_stable.png" alt="" class="gameImage1"
+                                    id="p1-r5-img">
+                            </div>
+                        </td>
+                        <td class="table-element" id="p2r6">
+                            <div id="p2pic6" class="gameImageContainer2"> <img src="Images/char_img_stable.png" alt="" class="gameImage2"
+                                    id="p2-r5-img">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
-
             <div class="present-sit">
-
+    
             </div>
         </div>
+    
+        <!-- Footer ( DICE ROLLER ) -->
+        <footer class="footer" id="main-footer">
+            <div class="dice-roll-div">
+    
+            </div>
+        </footer>
     </div>
-
-    <!-- Footer ( DICE ROLLER ) -->
-    <footer class="footer" id="main-footer">
-        <div class="dice-roll-div">
-
-        </div>
-    </footer>
+    
     <script src="script.js">
-
+ 
     </script>
 </body>
 
