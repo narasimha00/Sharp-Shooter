@@ -1,4 +1,4 @@
-// alert("Styles applied successfully !! , click 'OK' to continue [ update 4 ]")
+alert("Update : 5 \n CHANGES : \n * Update to fix screen sizing issues on almost all devices \n * This update also optimizes the code ");
 const gameP1 = document.querySelectorAll(".gameImageContainer1")
 const gameP2 = document.querySelectorAll(".gameImageContainer2")
 const shootSound = new Audio("Sounds/shoot.mp3")
