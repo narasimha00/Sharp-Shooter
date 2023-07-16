@@ -8,7 +8,7 @@ const settingsButton = document.getElementById("settings")
 const greetingsDone = document.querySelector("#popup-confirmation")
 
 // Current development status update !! 
-alert("UPDATE 4 applied successfully !! ")
+alert("UPDATE 5 applied successfully !! ")
 
 // Navbar programming 
 Array.from(document.getElementsByClassName("option-element")).forEach((e)=> {
