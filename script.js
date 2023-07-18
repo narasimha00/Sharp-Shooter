@@ -52,5 +52,5 @@ current_state.innerHTML = `<div> HELLO <br> <span style="color:red;font-size:3vw
 
 greetingsDone.addEventListener('click',()=> {
     document.body.querySelector("#welcome-popup").classList.add("inactive")
-    document.body.querySelector("#overall-container").classList.add("inactive")
+    document.body.querySelector("#overall-container").classList.add("active")
 })
