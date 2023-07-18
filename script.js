@@ -1,4 +1,6 @@
-alert("Update : 5 \n CHANGES : \n * Update to fix screen sizing issues on almost all devices \n * This update also optimizes the code ");
+// alert("Update : 5 \n CHANGES : \n * This Update fixes screen sizing issues on almost all devices \n * This update also optimizes the code ");
+alert("Update : 6 \n CHANGE-log: \n * This update disables blue highlighter whenever any element is clicked \n * Added blur effect during the pop up of greeting screen with beautiful transition . ")
+
 const gameP1 = document.querySelectorAll(".gameImageContainer1")
 const gameP2 = document.querySelectorAll(".gameImageContainer2")
 const shootSound = new Audio("Sounds/shoot.mp3")
@@ -8,7 +10,7 @@ const settingsButton = document.getElementById("settings")
 const greetingsDone = document.querySelector("#popup-confirmation")
 
 // Current development status update !! 
-alert("UPDATE 5 applied successfully !! ")
+alert("UPDATE 6 applied successfully !! ")
 
 // Navbar programming 
 Array.from(document.getElementsByClassName("option-element")).forEach((e)=> {
@@ -49,5 +51,6 @@ current_state.innerHTML = `<div> HELLO <br> <span style="color:red;font-size:3vw
 
 
 greetingsDone.addEventListener('click',()=> {
-    document.body.querySelector("#welcome-popup").classList.add("active")
+    document.body.querySelector("#welcome-popup").classList.add("inactive")
+    document.body.querySelector("#overall-container").classList.add("inactive")
 })
