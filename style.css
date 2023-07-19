@@ -163,7 +163,6 @@ label.logo {
         font-size: 2vh;
         overflow: hidden;
         box-shadow:0 0 50px black;
-        z-index: -5;
         transform:scale(2vh);
         font-size:3vw;;
         min-width:80vw;
