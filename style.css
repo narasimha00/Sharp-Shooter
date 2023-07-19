@@ -293,6 +293,7 @@ td {
    padding:2vh 3vw;
    border-top:2px dotted black;
    border-bottom:2px dotted black;
+   margin:2vh 3vw;
 }
 #popup-confirmation {
     font-size:large;
