@@ -104,7 +104,7 @@ label.logo {
         font-size:25px;
     }
     #main-nav-bar ul li a:hover {
-       color:orangered;
+       color:white;
     }
     #check:checked ~ ul {
         left:0;
@@ -290,13 +290,13 @@ td {
 }
 #popup-content {
    line-height:3vh;
-   padding:10px 2px;
+   padding:2vh 3vw;
    border-top:2px dotted black;
    border-bottom:2px dotted black;
 }
 #popup-confirmation {
     font-size:large;
-    padding:5px 50px;
+    padding:2vh 5vw;
     border:none;
     background-color:rgb(228, 228, 228);
     border-radius:20px;
