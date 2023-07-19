@@ -1,6 +1,6 @@
 // alert("Update : 5 \n CHANGES : \n * This Update fixes screen sizing issues on almost all devices \n * This update also optimizes the code ");
 alert("Update : 7 \n CHANGE-log: \n * This update fixes screen sizing issues on bigger screens like computer and tv .")
-
+alert("Update : 8 \n CHANGE-log: \n * Bug fixes .")
 const gameP1 = document.querySelectorAll(".gameImageContainer1")
 const gameP2 = document.querySelectorAll(".gameImageContainer2")
 const shootSound = new Audio("Sounds/shoot.mp3")
@@ -11,6 +11,7 @@ const greetingsDone = document.querySelector("#popup-confirmation")
 
 // Current development status update !! 
 alert("UPDATE 7 applied successfully !! ")
+alert("UPDATE 8 applied successfully !! ")
 
 // Navbar programming 
 Array.from(document.getElementsByClassName("option-element")).forEach((e)=> {

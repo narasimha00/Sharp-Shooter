@@ -26,13 +26,10 @@
 }
 label.logo {
     color:white;
-    font-size:2.5vh;
+    font-size:2.5vw;
     line-height:70px;
     padding:0 1.5vw;
     font-weight:bolder;
-    font-weight:600px;
-    border:2px solid white;
-    border-radius:50px;
 }
 #main-nav-bar ul {
     float:left;
