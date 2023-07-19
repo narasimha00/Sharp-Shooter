@@ -10,7 +10,7 @@ const settingsButton = document.getElementById("settings")
 const greetingsDone = document.querySelector("#popup-confirmation")
 
 // Current development status update !! 
-alert("margin added " )
+alert("additional margin added " )
 
 // Navbar programming 
 Array.from(document.getElementsByClassName("option-element")).forEach((e)=> {

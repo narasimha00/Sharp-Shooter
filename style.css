@@ -289,11 +289,12 @@ td {
    font-size:xx-large;
 }
 #popup-content {
-   line-height:3vh;
+   line-height:3.5vh;
    padding:2vh 3vw;
    border-top:2px dotted black;
    border-bottom:2px dotted black;
    margin:2vh 3vw;
+   font-size:small;
 }
 #popup-confirmation {
     font-size:large;
